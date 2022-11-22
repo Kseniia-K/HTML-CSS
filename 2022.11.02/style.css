@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(35, 37, 146);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    height: 50px;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    gap: 20px;
+}
+nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    font-family: Verdana, Helvetica, Arial, Calibri, sans-serif;
+    font-size: 24px;
+}
+.wrapper {
+    max-width: 1500px;
+    margin: 0px 50px;
+    /* background-color: rgb(255, 173, 157); */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px;
+}
+.panel {
+    max-width: 1500px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    /* background-color: crimson; */
+}
+.container {
+    max-height: 600px;
+    min-width: 1080px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: lightskyblue; */
+    overflow: scroll;
+    
+}
+.card {
+    background-color: rgb(127, 255, 212);
+    width: 220px;
+    height: 93px;
+    border: 1px solid #fff;
+    padding: 10px 4px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 10px;
+}
+.pink {
+    background-color: pink;
+}
+.lavender {
+    background-color: lavender;
+}
+.lemon {
+    background-color: lemonchiffon;
+}
+.square1 {
+    margin-right: 0;
+    padding: 10px 7.5px;
+    width: 93px;
+    height: 93px;
+}
+.square2 {
+    padding: 10px 7.5px;
+    width: 93px;
+    height: 93px;
+}
+.small {
+    display: flex;
+    justify-content: flex-end;
+}
+.bigSquare {
+    height: 220px;
+    width: 220px;
+    border: 1px solid #fff;
+    padding: 9px 4px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 10px;
+}
+.blue {
+    background-color: cornflowerblue;
+}
+.gray {
+    background-color: lightsteelblue;
+}
+.box {
+    margin-right: 0;
+}
+.gapBox {
+    margin-right: 40px;
+}
+.big {
+    font-size: 30px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+<body>
+    <form action="" method="get">
+        <!-- 
+            <input type="text">
+            <input type="button">
+            <input type="reset">
+            <input type="submit"> 
+        -->
+        <table>
+            <tr>
+                <td><label for="inp1">Ваш электронный адрес</label></td>
+                <td><input id="inp1" type="email" name="email" placeholder="Сувенир@dot.com"></td>
+                <!-- required – для обязательного заполнения -->
+            </tr>
+            <tr>
+                <td>Желаемое количество</td>
+                <td><input type="number" name="quantity" value="1" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td>Город доставки</td>
+                <td>
+                    <!-- <input type="text" name="city" value="Суздаль"> -->
+                    <select name="city">
+                        <option>Суздаль</option>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Биробиджан</option>
+                        <option>Магадан</option>
+                        <option>Сыктывкар</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Что-то ещё</td>
+                <td>
+                    <!-- <input type="tel"> -->
+                    <!-- <input type="color" value="#fd52e0"> -->
+                    <!-- <input type="date"> -->
+                    <!-- <input type="month"> -->
+                    <!-- <input type="password"> -->
+                    <input type="range" value="3" min="1" max="7">
+                </td>
+            </tr>
+            <tr>
+                <td>Удобный день доставки</td>
+                <td>
+                    <select name="day">
+                        <optgroup label="Рабочий день">
+                            <option value="пн">Понедельник</option>
+                            <option value="вт">Вторник</option>
+                            <option value="ср">Среда</option>
+                            <option value="чт">Четверг</option>
+                            <option value="пт">Пятница</option>
+                        </optgroup>
+                        <optgroup label="Выходной день">
+                            <option value="сб">Суббота</option>
+                            <option value="вс">Воскресенье</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Заказать сувенир">
+                    <button type="reset">Отмена</button>
+                </td>
+            </tr>
+        </table>
+        <fieldset>
+            <legend>Выберите сувенир</legend>
+            <div><input type="radio" name="souvenir" value="Матрёшка" checked>Матрёшка</div>
+            <div><label><input type="radio" name="souvenir" value="Кружка">Кружка</label></div>
+            <div><input type="radio" name="souvenir" value="Шапка-ушанка">Шапка-ушанка</div>
+            <div><input type="radio" name="souvenir" value="Плюшевый мишка">Плюшевый мишка</div>
+            <div><input type="radio" name="souvenir" value="Балалайка">Балалайка</div>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите цвет сувенира</legend>
+            <div><input type="radio" name="color" value="Хохлома" checked>Хохлома</div>
+            <div><input type="radio" name="color" value="Гжель">Гжель</div>
+            <div><input type="radio" name="color" value="Палехская роспись">Палехская роспись</div>
+            <div><input type="radio" name="color" value="Финифть">Финифть</div>
+            <div><input type="radio" name="color" value="Ориенбургский узор">Ориенбургский узор</div>
+        </fieldset>
+        <fieldset>
+            <legend>Дополнительно</legend>
+            <div><input type="checkbox" name="opt1" value="Подарочная коробка" checked>Подарочная коробка</div>
+            <div><input type="checkbox" name="opt2" value="Карта города">Карта города</div>
+            <div><input type="checkbox" name="opt3" value="Игральные карты">Игральные карты</div>
+            <div><input type="checkbox" name="op4t" value="Магнитик на память">Магнитик на память</div>
+            <div><input type="checkbox" name="opt5" value="Коллекционная монета">Коллекционная монета</div>
+        </fieldset>
+        <div>Комментарий к заказу</div>
+        <textarea name="message" placeholder="Напишите ваш комментарий здесь..." cols="35" rows="5"></textarea>
+    </form>
+</body>
+</html>

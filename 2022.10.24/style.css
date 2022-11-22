@@ -1,0 +1,26 @@
+.box {
+    background-color: slateblue;
+    font: 24px sans-serif;
+    color: yellow;
+    text-align: justify;
+    width: 300px;
+    /* height: 300px; */
+    min-height: 300px;
+    /* max-height: 400px; */
+    /* overflow: auto; /* visible / hidden / scroll / auto */
+    border-width: 15px;
+    border-color: black;
+    border-style: solid; /* none / solid / dashed / dotted / double */
+    border-right-color: lime;
+    border-right-width: 5px;
+    border: 10px cyan solid;
+    border-bottom: double 10px lime;
+    /* padding: 30px; */
+    /* padding: 10px 0 100px 50px; */
+    padding: 20px 50px;
+    margin: 50px 20px 20px 20px;
+    margin: 50px auto 20px;
+}
+.blue {
+    background-color: deepskyblue;
+}

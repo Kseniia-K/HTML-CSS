@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+.box {
+    /* background-color: crimson; */
+    display: flex;
+    width: 1000px;
+    /* height: 800px; */
+    margin: auto;
+    /* Направление основной оси */
+    flex-direction: row; /* row / row-reverse / column / column-reverse */
+    /* Расположение элементов вдоль основной оси */
+    justify-content: space-between; /* flex-start / flex-end / center / space-around / space-between */
+    /* Расположение элементов вдоль перпендикулярной оси */
+    align-items: flex-start; /* stretch / flex-start / flex-end / center / baseline */
+    flex-wrap: wrap; /* no-wrap / wrap / wrap-reverse */
+    /* Расположение строк перпендикулярно основной оси (работает так же, как и justify-content, работает только когда есть flex-wrap) */
+    align-content: space-between; /* center / flex-start / space-between */
+    gap: 20px;
+}
+.item {
+    background-color: fuchsia;
+    padding: 4px 10px;
+    /* width: 200px; */
+    width: calc(25% - 35px);
+    /* height: 50px */
+    text-align: center;
+}
+/* .item:nth-child(2n) {
+    background-color: mediumslateblue;
+} */
+/* 
+    display: block; => div, h1–h6, p, header, form
+    display: inline; => span, a, strong
+*/

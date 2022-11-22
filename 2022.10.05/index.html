@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+<body>
+    <form action="" method="get">
+        <!-- 
+            <input type="text">
+            <input type="button">
+            <input type="reset">
+            <input type="submit"> 
+        -->
+        <table>
+            <tr>
+                <td>Ваш электронный адрес</td>
+                <td><input type="email" name="email" placeholder="Сувенир@dot.com" required></td>
+            </tr>
+            <tr>
+                <td>Желаемое количество</td>
+                <td><input type="number" name="quantity" value="1" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td>Город доставки</td>
+                <td><input type="text" name="city" value="Суздаль"></td>
+            </tr>
+            <tr>
+                <td>Что-то ещё</td>
+                <td>
+                    <!-- <input type="tel"> -->
+                    <!-- <input type="color" value="#fd52e0"> -->
+                    <!-- <input type="date"> -->
+                    <!-- <input type="month"> -->
+                    <!-- <input type="password"> -->
+                    <input type="range" value="3" min="1" max="7">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Заказать сувенир"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

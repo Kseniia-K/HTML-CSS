@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы и Списки</title>
+    <style>
+        table, td, th {
+            border-style: solid;
+        }
+        div {
+            background-color: lightblue;
+        }
+        ul {
+            list-style-type: square; /* circle, disk*/
+        }
+        ol {
+            list-style-type: none;
+        }
+        ol ol { /* для списка ol, находящегося внутри ol */
+            list-style-type: lower-greek;
+            background-color: wheat;
+            color: white;
+            list-style-position: outside; /* inside, outside */
+        }
+    </style>
+</head>
+<body>
+    <h2>Таблицы</h2>
+        <!-- 
+            table – сама таблица, её границы
+            tr (table row) – строка таблицы
+            td (table date) – ячейка таблицы
+            th (table head) – заголовочная ячейка
+            caption – навание таблицы
+        -->
+        <table>
+            <!-- tr*3>td*6 -->
+            <!-- 
+                colspan – сколько столбцов будет занимать ячейка (объединение ячеек направо)
+                rowspan – сколько строк занимает ячейка (объединение ячеек вниз)
+             -->
+             <caption>Список учеников</caption>
+            <tr>
+                <th rowspan="2">Фамилия</th>
+                <th rowspan="2">Имя</th>
+                <th colspan="4">Черверть</th>
+            </tr>
+            <tr>
+                <th>I</th>
+                <th>II</th>
+                <th>III</th>
+                <th>IV</th>
+            </tr>
+            <tr>
+                <td>Сидоров</td>
+                <td>Василий</td>
+                <td>3</td>
+                <td>5</td>
+                <td>4</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Давыдова</td>
+                <td><div>Виктория</div></td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Торкаев</td>
+                <td>Егор</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </table>
+    <h2>Списки</h2>
+        <!-- 
+            Список покупок
+                Горох
+                Колбаса
+                Картошка
+                Майонез
+                Морковь
+            Список студентов
+            Список дел
+        -->
+    <h3>Что нужно для приготовления Оливье</h3>
+     <!-- 
+        ul (unordered list) – неупорядоченный (маркированный) список
+
+        li – строка каждого пункта списка
+
+        ul, li – блочные теги
+      -->
+     <ul>
+        <li>Горох</li>
+        <li>Картофель</li>
+        <li>Колбаса</li>
+        <li>Морковь</li>
+        <li>Майонез</li>
+     </ul>
+
+    <h3>Порядок приготовления Оливье</h3>
+    <!-- 
+        ol (ordered list) – упорядоченный (нумерованный, сортированный) список
+     -->
+     <ol>
+        <li>Купить нужные продукты</li>
+        <li>Сварить овощи</li>
+        <li>Порезать овощи</li>
+            <ol>
+                <li>Нарезать картофель кубиками</li>
+                <li>Порезать морковь слайсами</li>
+            </ol>
+        <li>Закинуть горошек</li>
+        <li>Добавить майонез</li>
+        <li>Перемешать салат</li>
+     </ol>
+
+</body>
+</html>
