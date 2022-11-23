@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lemonchiffon;
+}
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: lightsalmon;
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+}
+header {
+    padding: 10px 20px;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoName {
+
+}
+nav {
+    color: #fff;
+    display: flex;
+    gap: 20px;
+}
+.banner {
+    background-color: lightseagreen;
+}
+.info {
+    background-color: rgb(240, 168, 0);
+}
+.container {
+    background-color: rgb(0, 128, 213);
+}
+.card {
+    background-color: #fff;
+}
+footer {
+    background-color: green;
+}
