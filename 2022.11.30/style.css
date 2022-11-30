@@ -1,0 +1,122 @@
+body {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+h2 {
+    user-select: none;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-decoration: underline; */
+    /* border-bottom: 5px solid;
+    width: 200px; */
+}
+h2::after {
+    content: "";
+    border-bottom: 5px solid blue;
+    position: absolute;
+    bottom: -10px;
+    /* right: 50%; */
+    width: 200px;
+
+}
+h2::before {
+    content: attr(title);
+    position: absolute;
+    color: pink;
+    font-family: "Segoe Script", Impact, cursive;
+    font-size: 70px;
+    z-index: -1;
+    filter: blur(3px);
+}
+p::before {
+    content: "Read it: ";
+    color: forestgreen;
+    font-weight: 600;
+}
+p::after {
+    content: "\2665";
+    color: red;
+    font-size: 30px;
+}
+p::first-letter {
+    color: red;
+}
+h2::first-letter {
+    color: blue;
+}
+p::first-line {
+    text-decoration: underline;
+}
+
+/* 
+    Псевдоклассы
+    – событийные
+        :hover – при наведении мышки на тег
+        :link – непосещённая ссылка (синяя)
+        :visited – посещённая ссылка (фиолетовая)
+        :active – активная ссылка / кпопка
+        :checked
+        :focus – когда элементы формы находятся в фокусе (мы можем печатать в них текст)
+    – порядковые
+    :first-child
+    :last-child
+    :nth-child(n)
+    :nth-last-child(n)
+    ____ => По названию тега
+    :first-of-type
+    :last-of-type
+    :nth-of-type(n)
+    :nth-last-of-type(n)
+
+:not()
+*/
+
+p:hover:after {
+    color: blue;
+}
+button {
+    font-size: 30px;
+}
+button:active {
+    color: red;
+    background-color: #222;
+}
+input {
+    font-size: 30px;
+    border: none;
+    outline: none;
+}
+input:focus {
+    /* background-color: blue; */
+    border-bottom: 2px solid blue;
+}
+
+/* p:first-child {
+    background-color: blanchedalmond;
+} */
+/* p:nth-child(3) {
+    background-color: #dedede;
+} */
+
+body>:nth-child(2n):not(h2){ /* каждый чётный тег */
+    background-color: blueviolet;
+}
+body>:nth-child(2n - 1) { /* каждый нечётный тег */
+    background-color: aquamarine;
+}
+body>:nth-child(3n) {
+    background-color: lemonchiffon;
+}
+body>:nth-child(3n - 1):not(h2) {
+    background-color: pink;
+}
+body>:nth-child(3n - 2) {
+    background-color: lightskyblue;
+}
+
+p:first-of-type {
+    font-family: monospace;
+}
