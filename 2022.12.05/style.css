@@ -1,0 +1,82 @@
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: lightskyblue;
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/popular-puppy-questions-1639736471.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 
+        transform
+            – 2d
+            – 3d
+
+            translate(x, y) – сдвиг картинки (работает такжк как и position:relative)
+            scale(1,1) – масштабирование, если взять отрицательное значение – будет зеркальное отражение
+            rotate(0deg) – поворот по часовой стрелке вниз
+            skew(0deg, 0deg) – искажение
+
+            По умолчанию вся трансформация работает относительно центра блока
+    */
+    transform-origin: center; /* точка трансформации */
+    /* transform: translate(50%, 0) scale(1, 1) rotate(45deg); */
+    transition-duration: 2s; /* время анимированного эффекта */
+    transition-property: transform; /* css-правила, которые нужно анимировать со временем 
+    Отображение тега свойством display работать не будет */
+    /* transition-delay: 1s; время задержки */
+    /* transition-timing-function – движение анимации со временем */
+    transition-timing-function: cubic-bezier (0,2.2,.83,.67);
+    transition-timing-function: linear;
+    /* animation-name: motion; */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+.box:hover {
+    /* transform: translate(50%, 0) scale(1.2, 1.2); */
+    /* transform: rotate(45deg); */
+    /* transform: skew(-40deg,20deg); */
+    transform: translate(200px, 0);
+    background-color: mediumslateblue;
+    /* width: 400px; */
+    animation-play-state: paused;
+}
+@keyframes shake {
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes motion {
+    0% {
+        transform: translate(0) rotate(-360deg);
+        background-color: blue;
+    }
+    50% {
+        transform: translate(calc(100vw - 300px)) rotate(360deg);
+    }
+    100% {
+        transform: translate(0) rotate(-360deg);
+        background-color: aqua;
+    }
+}
+.square {
+    width: 100px;
+    height: 0;
+    /* background-color: crimson; */
+    /* border-top: 100px solid pink; */
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid lavender;
+    border-left: 50px solid transparent;
+    margin-bottom: 50px;
+    transform: rotate(0deg);
+}
