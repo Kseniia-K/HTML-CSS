@@ -1,0 +1,66 @@
+body {
+    margin: 15px 20px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    gap: 50px;
+    outline: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px;
+}
+section>section:first-of-type, section:first-of-type ~ section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+section:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+section>section:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    outline: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px;
+    margin-top: 15px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+section>section:first-of-type ~ section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    outline: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px;
+    margin-top: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+a {
+    display: flex;
+    justify-content: right;
+}
+footer {
+    margin-top: 10px;
+    padding: 5px;
+    outline: 1px solid gainsboro;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
