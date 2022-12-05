@@ -116,7 +116,6 @@ body>:nth-child(3n - 1):not(h2) {
 body>:nth-child(3n - 2) {
     background-color: lightskyblue;
 }
-
 p:first-of-type {
     font-family: monospace;
 }
