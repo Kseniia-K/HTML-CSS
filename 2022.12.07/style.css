@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background-image: url(https://img3.goodfon.ru/wallpaper/nbig/5/df/field-of-grass-sky-clouds.jpg);
+}
+.cart {
+    /* background-color: lavender; */
+    width: 200px;
+    height: 150px;
+    box-sizing: border-box;
+    margin-top: 450px;
+    margin-left: 100px;
+    animation-name: run;
+    transition-timing-function: cubic-bezier(0,.97,1,1.38);
+    animation-duration: 5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@keyframes run {
+    100% {
+        transform: translate(calc(100vw - 350px));
+    }
+}
+.baby-carriage-body {
+    width: 95px;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid pink;
+    border-left: 25px solid transparent;
+    margin-bottom: 35px;
+    transform: rotate(180deg);
+    border-radius: 20px;
+}
+.baby-carriage-top {
+    width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 40px solid pink;
+    transform: rotate(85deg);
+    margin-top: 10px;
+    margin-left: 80px;
+    position: relative;
+    top: 30px;
+}
+.baby-carriage-top2 {
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 14px solid transparent;
+	border-bottom: 20px solid pink;
+    transform: rotate(125deg);
+    margin-top: 20px;
+    margin-left: 120px;
+    position: relative;
+    top: 5px;
+}
+.wheels {
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.wheel {
+    background-color: pink;
+    width: 15px;
+	height: 15px;
+    border-top: 10px solid pink;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid pink;
+    border-left: 7px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    bottom: 35px;
+    background-image: radial-gradient(circle, pink, white);
+}
+.ribbon {
+    background-color: white;
+    width: 10px;
+	height: 10px;
+    border-top: 10px solid pink;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid pink;
+    border-left: 7px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    bottom: 42px;
+    right: 5px;
+}
+.handle {
+    width: 50px;
+	height: 20px;
+    border-top: 5px solid pink;
+    border-right: 7px solid transparent;
+    border-bottom: 5px solid pink;
+    border-left: 7px solid transparent;
+    transform: rotate(65deg);
+    position: relative;
+    top: 95px;
+    right: 60px;
+}
