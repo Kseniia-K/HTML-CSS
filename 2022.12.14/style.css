@@ -1,0 +1,70 @@
+.card {
+    background-color: lightskyblue;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0#2228, 0 0 15px 0 #fff8;
+    position: relative;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+}
+.wrapper  {
+    background-image: linear-gradient(to bottom, mediumslateblue 1%, darkcyan  43%, cornflowerblue 60%, lavender 90%, snow 95%);
+    /* background-color: cornflowerblue; */
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    /* 
+        justify/aling-items – расположение элементов внутри одной ячейки сетки
+        justtify –  ось x
+        aling – ось y
+    */
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.card:last-child {
+    /* 
+        *-self – индивидуальное расположение элементов внутри одной ячейки тегов
+    */
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+.card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(251, 144, 255, 0.667);
+    content: "Show";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 900 20px "Comic Sans MS", cursive;
+    color: black;
+    cursor: pointer;
+    /* 
+        filter – дизайнерские эффекты
+        grayscale(100%) – переход в ч/б
+        invert(100%) – инверсия цвета
+        blur(2px) – размытие
+    */
+    /* filter: blur(2px); */
+    backdrop-filter: blur(3x);
+    /* transition: backdrop-filter .5s linear; */
+    transition-property: backdrop-filter, background-color;
+}
+.card:hover::before  {
+    backdrop-filter: blur(0);
+    content: "";
+    background-color: transparent;
+}
