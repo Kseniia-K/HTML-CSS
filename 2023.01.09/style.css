@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.wrapper {
+    background-color: lightskyblue;
+    width: 1000px;
+    height: auto;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}
+.one {
+    background-color: seagreen;
+    padding: 15px 40px;
+    background-image: url(https://www.gardeningknowhow.com/wp-content/uploads/2010/08/winter-roses.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position: right 40px center;
+}
+.two {
+    background-color: lightseagreen;
+    padding: 15px 40px;
+}
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h3 {
+    font-weight: 500;
+}
+.cards {
+    background-color: lightskyblue;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
