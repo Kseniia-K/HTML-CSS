@@ -5,22 +5,23 @@ body {
 a {
     text-decoration: none;
 }
-.wrapper {
-    background-color: lightgray;
-    padding: 35px 45px;
-}
 h1 {
     font-size: 40px;
     font-weight: 500;
 }
 .partOne {
-    /* background-color: lightslategray; */
+    background-color:darkseagreen;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 45px;
+    color: aliceblue;
+}
+.content>p {
+    font-size: 20px;
 }
 .pic {
-    background-color: peachpuff;
+    background-color: lightgray;
     width: 450px;
     height: 200px;
 }
@@ -29,12 +30,19 @@ h2 {
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
     font-weight: 500;
+    color: rgb(50, 50, 50);
+    font-size: 30px;
 }
 h3 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
+    color: rgb(50, 50, 50);
+}
+.partTwo {
+    padding: 20px 45px 40px 45px;
+    background-color: aliceblue;
 }
 .cards {
     /* background-color: lightskyblue; */
@@ -42,18 +50,18 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     
 }
 .card  {
     /* background-color: lavender; */
-    width: calc(50% - 5px);
+    width: calc(50% - 20px);
     height: auto;
     display: flex;
     align-items: center;
 }
 .picture {
-    background-color: peachpuff;
+    background-color: darkseagreen;
     width: 150px;
     height: 120px;
     margin-right: 10px;
@@ -68,6 +76,11 @@ h3 {
 .cardsContent>h3 {
     margin: 0;
     padding: 0;
+}
+.partThree {
+    padding-bottom: 40px;
+    padding-top: 20px;
+    background-color: lightgray;
 }
 .buyCards {
     display: flex;
@@ -109,12 +122,20 @@ h3 {
     color: rgb(50, 50, 50);
     border-color: transparent;
 }
+.buyCard>h3 {
+    color: aliceblue;
+}
 li {
     padding: 4px 0;
 }
 .partFour {
-    /* background-color: lightslategray; */
+    background-color:darkseagreen;
     height: 500px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+.partFour>h2 {
+    color: aliceblue;
 }
 .info {
     /* background-color: palevioletred; */

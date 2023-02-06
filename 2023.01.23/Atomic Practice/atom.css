@@ -1,0 +1,198 @@
+:root{
+    --first-color: darkseagreen;
+    --second-color: aliceblue;
+    --third-color: lightgray;
+    --fourth-color: rgb(50, 50, 50);
+    --btn-color: snow;
+    --btn-bgcolor: lightgreen;
+}
+/* margin */
+.m0 {
+    margin: 0;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.m10-0 {
+    margin: 10px 0;
+}
+/* padding */
+.p {
+    padding: 20px 45px 40px 45px;
+}
+.p0 {
+    padding: 0;
+}
+.p-5 {
+    padding: 5px;
+}
+.p15-45 {
+    padding: 15px 45px;
+}
+.p4-0 {
+    padding: 4px 0;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-40  {
+    padding-bottom: 40px;
+}
+.pb-20  {
+    padding-bottom: 20px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+/* width */
+.w-450 {
+    width: 450px;
+}
+.wcal50-20 {
+    width: calc(50% - 20px);
+}
+.w-150 {
+    width: 150px;
+}
+.w-120 {
+    width: 120px;
+}
+.w-300 {
+    width: 300px;
+}
+.w-296 {
+    width: 296px;
+}
+.w-250 {
+    width: 250px;
+}
+.w-400 {
+    width: 400px;
+}
+/* height */
+.h-200 {
+    height: 200px;
+}
+.h-500 {
+    height: 500px;
+}
+.h-a {
+    height: auto;
+}
+.h-150 {
+    height: 150px;
+}
+.h–120  {
+    height: 120px;
+}
+.h-60 {
+    height: 60px;
+}
+.h-40 {
+    height: 40px;
+}
+.h-20  {
+    height: 20px;
+}
+mxh-120 {
+    max-height: 120px;
+}
+/* fonts */
+.ff-ss {
+    font-family: sans-serif;
+}
+.fz-40 {
+    font-size: 40px;
+}
+.fz-20  {
+    font-size: 20px;
+}
+.fz-30 {
+    font-size: 30px;
+}
+.fz-25 {
+    font-size: 25px;
+}
+.fz-35 {
+    font-size: 35px;
+}
+.fz-15  {
+    font-size: 15px;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-600 {
+    font-weight: 600;
+}
+/* text */
+.txd-n {
+    text-decoration: none;
+}
+.txal-c {
+    text-align: center;
+}
+/* flex */
+.df {
+    display: flex;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-c {
+    justify-content: center;
+}
+.jc-fls {
+    justify-content: flex-start;
+}
+.alit-c {
+    align-items: center;
+}
+.alit-fld {
+    align-items: flex-end;
+}
+.flw-w {
+    flex-wrap: wrap;
+}
+.fld-c {
+    flex-direction: column;
+}
+/* gap */
+.g-30 {
+    gap: 30px;
+}
+.g-40 {
+    gap: 40px;
+}
+.g-35 {
+    gap: 35px;
+}
+.g-5 {
+    gap: 5px;
+}
+/* border */
+.bdrs-10  {
+    border-radius: 10px;
+}
+.bdrs-2 {
+    border-radius: 2px;
+}
+.bdrs-8 {
+    border-radius: 8px;
+}
+.bdc-tr {
+    border-color: transparent;
+}
+/* extra */
+.trsf-s{
+    transform: scale(-1, 1);
+}
+.crs-p {
+    cursor: pointer;
+}
