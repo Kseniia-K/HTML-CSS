@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+        Блок
+        Элемент
+        Модификатор
+
+        Блок – кусок сайта, при изменении разположения которого ни логика, ни вёрстка сайта не меняется
+
+        .card
+        .card-container
+
+        .menu
+        
+        Элемент – один из составлющих блока
+
+        .menu__link
+        .menu__item
+        .menu__list
+        .menu__sublist
+
+        .card-container__item
+
+        Модификатор – варианты стилизации одного блока или элемента
+
+        .menu_vertical
+        .menu__link_grey
+        .menu__link_hover_blue
+
+        Ни при каких обстоятельствах БЭМ не использует:
+        normalize.css
+        resize.css
+        селекторы по id
+        все селекторы, кроме классов 
+     -->
+     <!-- 
+        <style>
+        .menu__link_hover_blue:hover {
+            color: blue;
+        }
+        </style> 
+    -->
+</head>
+<body class="wrapper">
+    <!-- .timetable>.timetable__head>.timetable__head-img+.timetable__head-title^>.timetable__head*7>.timetable__head-number{$}+timetable__head-title -->
+    <img src="./clock.svg" alt="часы">
+    <div class="timetable">
+        <div class="timetable__head">
+            <div class="timetable__head-img"></div>
+            <div class="timetable__head-title"></div>
+        </div>
+        <div class="timetable__head">
+            <div class="timetable__head-number">1</div>
+            <timetable__head-title></timetable__head-title>
+        </div>
+        <div class="timetable__head">
+            <div class="timetable__head-number">2</div>
+            <timetable__head-title></timetable__head-title>
+        </div>
+        <div class="timetable__head">
+            <div class="timetable__head-number">3</div>
+            <timetable__head-title></timetable__head-title>
+        </div>
+        <div class="timetable__head">
+            <div class="timetable__head-number">4</div>
+            <timetable__head-title></timetable__head-title>
+        </div>
+        <div class="timetable__head">
+            <div class="timetable__head-number">5</div>
+            <timetable__head-title></timetable__head-title>
+        </div>
+        <div class="timetable__head">
+            <div class="timetable__head-number">6</div>
+            <timetable__head-title></timetable__head-title>
+        </div>
+        <div class="timetable__head">
+            <div class="timetable__head-number">7</div>
+            <timetable__head-title></timetable__head-title>
+        </div>
+    </div>
+</body>
+</html>
