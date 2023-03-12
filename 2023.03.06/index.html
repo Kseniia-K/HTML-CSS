@@ -4,56 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CP_2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="wrapper">
     <div class="canvas">
         <div class="mapLegend">
             <ul class="mapLegend__list">
-                <li class="mapLegend__item">Public Layer</li>
-                <li class="mapLegend__item">Private Layer</li>
-                <li class="mapLegend__item">BasicAuth Guard</li>
-                <li class="mapLegend__item">HTTPS</li>
-                <li class="mapLegend__item">JDBC</li>
+                <div class="mapLegend__itemBlock">
+                    <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="eye" class="mapLegend__icons">
+                    <li class="mapLegend__item">Public Layer</li>
+                </div>
+                <div class="mapLegend__itemBlock">
+                    <img src="https://avatars.mds.yandex.net/i?id=e60e88d6fd56756e389ec44b32f22657-6249527-images-thumbs&n=13" alt="closedEye" class="mapLegend__icons">
+                    <li class="mapLegend__item">Private Layer</li>
+                </div>
+                <div class="mapLegend__itemBlock">
+                    <img src="https://cdn-icons-png.flaticon.com/512/44/44594.png" alt="lock1" class="mapLegend__icons">
+                    <li class="mapLegend__item">BasicAuth Guard</li>
+                </div>
+                <div class="mapLegend__itemBlock">
+                    <div class="line1"></div>
+                    <li class="mapLegend__item">HTTPS</li>
+                </div>
+                <div class="mapLegend__itemBlock">
+                    <div class="line2"></div>
+                    <li class="mapLegend__item">JDBC</li>
+                </div>
             </ul>
         </div>
-        <div class="blockType1">
-            <h3 class="blockType1__item">Client</h3>
-        </div>
-        <div class="blockType1">
-            <h3 class="blockType1__item">Client</h3>
-        </div>
-        <div class="blockType1">
-            <h3 class="blockType1__item">Client</h3>
-        </div>
-        <div class="blockType2">
-            <img src="" alt="" class="blockType2__image">
-            <h2>Zuul</h2>
-            <h4>GATEWAY</h4>
-        </div>
-        <div class="blockType2">
-            <img src="" alt="" class="blockType2__image">
-            <h2>Eureca Discovery</h2>
-            <h4>SERVER</h4>
-        </div>
-        <div class="blockType3">
-            <h3>Accomodation</h3>
-            <h4>SERVISE</h4>
-        </div>
-        <div class="blockType3">
-            <h3>Auth</h3>
-            <h4>SERVISE</h4>
-        </div>
-        <div class="blockType3">
-            <h3>Reservation</h3>
-            <h4>SERVISE</h4>
-        </div>
-        <div class="blockType3">
-            <h3>User</h3>
-            <h4>SERVISE</h4>
+        <div class="blocks">
+            <div class="block1">
+                <div class="blockPoint1">
+                    <div class="blockType1">
+                        <h3 class="blockType1__item">Client</h3>
+                    </div>
+                    <div class="point"></div>
+                </div>
+                <div class="blockPoint1">
+                    <div class="blockType1">
+                        <h3 class="blockType1__item">Client</h3>
+                    </div>
+                    <div class="point"></div>
+                    <div class="linePoints1"></div>
+                    <img src="img.svg" alt="paranthesis" class="paranthesis1">
+                </div>
+                <div class="blockPoint1">
+                    <div class="blockType1">
+                        <h3 class="blockType1__item">Client</h3>
+                    </div>
+                    <div class="point"></div>
+                </div>
+            </div>
+            <div class="square">
+                <img src="https://avatars.mds.yandex.net/i?id=e60e88d6fd56756e389ec44b32f22657-6249527-images-thumbs&n=13" alt="closedEye" class="eyeIcon">
+            </div>
+            <div class="block2">
+                <div class="blockPoint2">
+                    <div class="point2"></div>
+                    <div class="blockType2">
+                        <img class="icons" src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="eye" class="blockType2__image">
+                        <h2>Zuul</h2>
+                        <h4 class="blockType2__item2">GATEWAY</h4>
+                    </div>
+                    <div class="point2"></div>
+                    <div class="linePoints1"></div>
+                </div>
+                <div class="blockPoint2">
+                    <div class="point2"></div>
+                    <div class="blockType2">
+                        <img class="icons" src="https://cdn-icons-png.flaticon.com/512/44/44594.png" alt="lock" class="blockType2__image">
+                        <h2>Eureca Discovery</h2>
+                        <h4 class="blockType2__item2">SERVER</h4>
+                    </div>
+                    <div class="point2"></div>
+                    <div class="linePoints1"></div>
+                    <img src="img.svg" alt="paranthesis" class="paranthesis2">
+                    <!-- <img src="img2.svg" alt="paranthesis" class="paranthesis3"> -->
+                </div>
+            </div>
+            <div class="block3">
+                <div class="blockPoint3">
+                    <div class="point3"></div>
+                    <div class="blockType3">
+                        <h3>Accomodation</h3>
+                        <h4 class="blockType3__item2">SERVISE</h4>
+                    </div>
+                    <div class="point3"></div>
+                </div>
+                <div class="blockPoint3">
+                    <div class="point3"></div>
+                    <div class="blockType3">
+                        <h3>Auth</h3>
+                        <h4 class="blockType3__item2">SERVISE</h4>
+                    </div>
+                    <div class="point3"></div>
+                </div>
+                <div class="blockPoint3">
+                    <div class="point3"></div>
+                    <div class="blockType3">
+                        <h3>Reservation</h3>
+                        <h4 class="blockType3__item2">SERVISE</h4>
+                    </div>
+                    <div class="point3"></div>
+                </div>
+                <div class="blockPoint3">
+                    <div class="point3"></div>
+                    <div class="blockType3">
+                        <h3>User</h3>
+                        <h4 class="blockType3__item2">SERVISE</h4>
+                    </div>
+                    <div class="point3"></div>
+                </div>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>

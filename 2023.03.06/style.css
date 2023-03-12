@@ -1,0 +1,220 @@
+.wrapper {
+    margin: 0;
+    font-family: sans-serif;
+}
+.canvas {
+    width: calc(100vw - 70px);
+    height: calc(100vh - 80px);
+    background-color: #000;
+    color: snow;
+    padding: 20px 40px 60px 30px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.mapLegend {
+    /* background-color: #515151; */
+    height: 150px;
+    width: 200px;
+}
+.mapLegend__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 12px;
+    list-style-type: none;
+}
+.mapLegend__itemBlock {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.mapLegend__icons {
+    width: 17px;
+    height: 17px;
+    filter: invert();
+}
+.line1 {
+    background-color: rgb(65, 232, 43);
+    border: 1px solid rgb(65, 232, 43);
+    border-radius: 10px;
+    width: 15px;
+    height: 0.5px;
+}
+.line2 {
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 15px;
+    height: 0.5px;
+}
+.blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 45px; */
+    padding-top: 10px;
+}
+.block1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 125px;
+}
+.blockType1 {
+    background-color: #4b3b3b;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.point {
+    background-color: snow;
+    border-radius: 50%;
+    border: 5px solid snow;
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px -20px rgba(0, 0, 0, 0.687), 0px 0px 10px 4px #d6d6d6;
+}
+.blockPoint1 {
+    display: flex;
+    align-items: center;
+}
+.linePoints1 {
+    background-color: rgb(65, 232, 43);
+    border: 1px solid rgb(65, 232, 43);
+    border-radius: 10px;
+    width: 45px;
+    height: 0.5px;
+    z-index: 1;
+}
+.square {
+    border: 1px dashed gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 650px;
+    height: 580px;
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.eyeIcon {
+    width: 17px;
+    height: 17px;
+    filter: invert();
+}
+.block2 {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* gap: 45px; */
+    padding-bottom: 125px;
+}
+.blockType2 {
+    background-color: #394c3d;
+    width: 150px;
+    height: 322px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+.blockType2__item2 {
+    font-size: 13px;
+}
+.point2 {
+    background-color: snow;
+    border-radius: 50%;
+    border: 5px solid snow;
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px -20px rgba(0, 0, 0, 0.687), 0px 0px 10px 4px #d6d6d6;
+    position: relative;
+    z-index: 1;
+}
+.blockPoint2 {
+    display: flex;
+    align-items: center;
+}
+.block3 {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.blockType3{
+    background-color: #353548;
+    width: 350px;
+    height: 75px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 6px -8px 5px 0px rgba(0, 0, 0, 0.5), 8px -10px 8px 0px #363643;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.blockType3__item2 {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.point3 {
+    background-color: snow;
+    border-radius: 50%;
+    border: 5px solid snow;
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px -20px rgba(0, 0, 0, 0.687), 0px 0px 10px 4px #d6d6d6;
+    position: relative;
+    z-index: 1;
+}
+.blockPoint3 {
+    display: flex;
+    align-items: center;
+}
+.icons {
+    width: 17px;
+    height: 17px;
+    filter: invert();
+    padding-top: 35px;
+}
+.paranthesis1 {
+    position: absolute;
+    right: 720px;
+    bottom: 154px;
+    transform: scale(-1);
+    width: 800px;
+    height: 500px;
+}
+.paranthesis2 {
+    position: absolute;
+    left: 498px;
+    top: 200px;
+    width: 800px;
+    height: 500px;
+}
+/* .paranthesis3 {
+    position: absolute;
+    left: 498px;
+    top: 178px;
+    width: 800px;
+    height: 750px;
+} */
