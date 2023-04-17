@@ -1,0 +1,27 @@
+$primeryColor: rgb(123,341,232);
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+// .menu {
+//     background-color: blue;
+//     &hover {
+//         background-color: $primeryColor;
+//     }
+//     @media (max-width: 768px) {
+//         background-color: red;
+//     }
+//     @include transform(rotate(45deg))
+// }
+
+%menu {
+    border:1 px solid #333;
+    padding: 10px;
+    color: #ccc;
+}
+.menu__item {
+    @extend %menu;
+    background-color: red;
+}
